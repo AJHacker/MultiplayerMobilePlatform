@@ -340,7 +340,7 @@ jQuery(function($){
            /*  newWord : function(data) {
                 // Insert the new word into the DOM
                 //game.create();
-                $('#hostWord').text(data.word);
+                $('#hostWord').text(data.word)
                 App.doTextFit('#hostWord');
 
                 // Update the data for the current round
@@ -365,7 +365,7 @@ jQuery(function($){
 			}
 		};
 		startGame();
-		$('#hostWord').html(myGameArea.canvas);
+		$('#gameArea').html(myGameArea.canvas);
                 //App.doTextFit('#hostWord');
 
             },
