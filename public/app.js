@@ -348,26 +348,25 @@ jQuery(function($){
                 App.Host.currentRound = data.round;
             },
 			 */
-			newWord : function(data) {
+	newWord : function(data) {
                 // Insert the new word into the DOM
                 //game.create();
-                $('#hostWord').html(this.canvas);
-				function startGame() {
-					myGameArea.start();
-					}
+		function startGame() {
+			myGameArea.start();
+			}
 
-				var myGameArea = {
-					canvas : document.createElement("canvas"),
-					start : function() {
-						this.canvas.width = 480;
-						this.canvas.height = 270;
-						this.context = this.canvas.getContext("2d");
-						// document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-					}
-				};
-				startGame();
-				$('#hostWord').html(this.canvas);
-                App.doTextFit('#hostWord');
+		var myGameArea = {
+			canvas : document.createElement("canvas"),
+			start : function() {
+				this.canvas.width = 480;
+				this.canvas.height = 270;
+				this.context = this.canvas.getContext("2d");
+				// document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+			}
+		};
+		startGame();
+		$('#hostWord').html(myGameArea.canvas);
+                //App.doTextFit('#hostWord');
 
             },
 
